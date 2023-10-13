@@ -1,0 +1,49 @@
+.container-fluid{
+    background-color: black;
+    height: 70px;
+}
+
+
+.navbar-nav me-auto mb-2 mb-lg-0{
+    display: flex;
+    justify-content: space-between;
+}
+.videoBanner{
+    width: 100%;
+    height: 10%;
+}
+.video{
+    width: 100%;
+
+}
+.minibanner{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    height: 90px;
+
+
+}
+
+.imgg {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    animation: mymove  9s infinite;
+}
+  
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+} 
+
+.banner2{
+    width: 100%;
+    height: 10%;
+}
+.img2{
+    width: 100%;
+
+}
