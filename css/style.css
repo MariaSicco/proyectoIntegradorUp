@@ -1,3 +1,13 @@
+.navbar-expand-lg .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 130px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 20px;
+}
 .container-fluid{
     background-color: black;
     height: 70px;
@@ -11,6 +21,8 @@
 .videoBanner{
     width: 100%;
     height: 10%;
+    border: 0ch;
+    margin: 0%;
 }
 .video{
     width: 100%;
@@ -27,13 +39,123 @@
 
 }
 
+.navbar-nav me-auto mb-2 mb-lg-0{ /* como separar el cotenido de la barra navegadora*/
+    display: flex;
+    justify-content: space-between;
+}
 .imgg {
     width: 100%;
     height: 80px;
     position: relative;
     animation: mymove  9s infinite;
 }
+
   
+
+.backgroundImage{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/backimg.png);
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+} 
+
+.picture{
+    padding: 50px;
+}
+.text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top:100px ;
+    padding: 100px;
+
+}
+
+.textF1{
+    padding: 40px;
+    font-size: 25px;
+}
+
+
+
+.boton1 {
+    justify-content: center;
+    padding: 10px 20px;
+    color: rgb(16, 16, 15);
+    background-color: rgb(202, 226, 43);
+    border: none;
+    border-radius: 9px;
+    transition: background-color 0.3s ease; /* Transición suave de color */
+}
+  
+.boton1:hover {
+    background-color: #ff0000;
+    color: aliceblue;
+}
+.tiempo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.buttonT {
+    margin-right: 20px;
+    width: 40%;
+    padding: 10px 20px;
+    color: rgb(16, 16, 15);
+    background-color: rgb(202, 226, 43);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave de color */
+  }
+  
+.buttonT:hover {
+    background-color: #ff0000;
+    color: aliceblue;
+}
+.imggP{
+    width: 50%; 
+    height: auto;
+
+    transition: transform 0.3s ease;
+}
+
+.imggP:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+  }
+  
+.box{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.box2{
+    display: flex;
+    padding: 20px;
+}
+.years{
+    margin-bottom: 10px;
+}
+.secctiempo{
+    background-image: url(../img/whiteBanner.jpg);
+}
+
+
+.textoalt{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-align: justify;
+}
 @keyframes mymove {
     from {left: 0px;}
     to {left: 100%;}
@@ -47,3 +169,176 @@
     width: 100%;
 
 }
+
+/* desktop*/
+
+@media (min-width: 1025px) and (max-width: 1980px) {
+    
+    .collapse navbar-collapse{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:50px ;
+        padding: 100px;
+        width: 50%;
+    
+    }
+    .text h1{
+        font-size: 70px;
+    }
+    .picture{
+        width: 50%;
+    }
+    .picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .boton1 {
+        display: flex;
+        justify-content: center;
+        padding: 10px 10px;
+        color: rgb(16, 16, 15);
+        background-color: rgb(202, 226, 43);
+        border: none;
+        border-radius: 9px;
+        transition: background-color 0.3s ease; /* Transición suave de color */
+        width: 70%;
+        height: 10%;
+        font-size: 30px;
+    }
+    .imggP{
+        width: 50%; 
+        height: auto;
+    
+        transition: transform 0.3s ease;
+    }
+    .box2{
+        display: flex;
+        padding: 20px;
+        width: 50%;
+    }
+    .textoalt{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        text-align: justify;
+        font-size: 21px;
+        margin-right: 60px;
+    }
+    .years{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
+
+/* Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-fluid{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        object-fit: contain;
+    }
+    .container-fluid img {
+        width: 40%;
+        justify-content: left;
+        float: left; 
+        }
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+        height: 90px;
+    }
+    .navbar navbar-expand-lg bg-body-tertiary p-0{
+        width: 100%;
+        object-fit: cover;
+    }
+    .navbar-expand-lg .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        
+        
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 20px;
+    }
+    .backgroundImage{
+        width: 100%;
+        height: 70%;
+        background-image: url(../img/backimg.png);
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: aliceblue;
+    } 
+    .picture{
+        width: 100%;
+        height: 700px;
+    }
+    .picture img{
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+    }
+    .text{
+       padding: 0;
+       margin-top: 50px; 
+       margin-bottom: 50px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    
+    }
+    .boton1 {
+        display: flex;
+        justify-content: center;
+        padding: 10px 10px;
+        color: rgb(16, 16, 15);
+        background-color: rgb(202, 226, 43);
+        border: none;
+        border-radius: 9px;
+        transition: background-color 0.3s ease; /* Transición suave de color */
+        width: 40%;
+        height: 30%;
+        font-size: 30px;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 900px;
+    }
+    .imggP{
+        width: 100%; 
+        height: auto;
+    
+        transition: transform 0.3s ease;
+    }
+    .minibanner{
+        width: 100%;
+    }
+    
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+   
+    
+  }

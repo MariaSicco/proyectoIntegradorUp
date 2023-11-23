@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/informacion.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navegador-->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid">
+          <img src="./img/miniibanner.png" alt="">
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item p3">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./informacion.html">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./pilotos.html">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-light" href="./juego.html">Live Experience</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <div class="bannerCeleste">
+        <img src="../proyectoIntegrador/img/celeste.png" alt="">
+    </div>
+
+    <div class="option">
+        <button class="boton1" onclick="location.href='#noticias'">NOTICIAS</button>
+        <button class="boton1" onclick="location.href='#podio'">PODIO</button>
+        <button class="boton1" onclick="location.href='#fechas'">FECHAS</button>
+    </div>
+
+    <div class="noticias" id="noticias">
+        <div class="section"> <p>NOTICIAS</p></div>
+        <div class="todasNotas">
+            <div class="notas">
+                <img src="../proyectoIntegrador/img/noticia1.jpg" alt="">
+                <div class="box2">
+                    <p class="fecha">21-11-2023</p>
+                    <h2 class="titulo"> Verstappen recibió consejo paternal sobre la crítica del GP de Las Vegas</h2>
+                    <div class="textt">
+                        <p>Su padre admite que ha hablado con el triple campeón del mundo sobre su frustración con la Fórmula 1 durante todo el fin de semana del GP de Las Vegas."Siempre puedes decir algunas cosas". Jos Verstappen, dijo un ex piloto de F1 De Telegraaf periódico. "Pero en algunos casos también hay que ser un poco más delicado.</p>
+                    </div>
+ 
+                </div>
+            </div>
+            <div class="notas">
+                <img src="../proyectoIntegrador/img/noticia2.jpg" alt="">
+                <div class="box2">
+                    <p class="fecha">21-11-23</p>
+                    <h2 class="titulo">Gasly critica a la FIA por el derrame de petróleo previo a la carrera en el GP de F1 de Las Vegas</h2>
+                    <div class="textt">
+                        <p class="textt">incluso como el de Max Verstappen GP de Las Vegas A medida que la negatividad se desvanece, está claro que otros pilotos y funcionarios siguen descontentos con ciertos eventos ocurridos durante el reciente fin de semana de carreras. Pierre Gasly, por ejemplo, admite que incluso tomó la iniciativa de decirle a la FIA que tiene un grave problema con un incidente que ocurrió apenas una hora antes del tan esperado gran premio del sábado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="notas">
+                <img src="../proyectoIntegrador/img/noticia3.jpg" alt="">
+                <div class="box2">
+                    <p class="fecha">20-11-2023</p>
+                    <h2 class="titulo">Las estrellas de la F1 luchan contra el agotamiento durante el exigente final de la temporada de F1</h2>
+                    <div class="textt">
+                        <p class="textt">A medida que el polvo se asienta después de la nueva pieza central de la F1 en Las Vegas, se está gestando un gran descontento por la carga que recae sobre los seres humanos que componen el circo ambulante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="notas">
+                <img src="../proyectoIntegrador/img/noticia4.jpg" alt="">
+                <div class="box2">
+                    <p class="fecha">20-11-2023</p>
+                    <h2 class="titulo">Alonso aboga por mejoras en el GP de Las Vegas la próxima temporada de F1</h2>
+                    <div class="textt">
+                        <p class="textt">Fernando Alonso está respaldando a los organizadores del nuevo y muy criticado GP de Las Vegas para que se recuperen con mejoras clave para 2024. Triple campeón del mundo Max Verstappen Tuvo una cara larga y una voz fuerte y crítica durante todo el fin de semana de carrera, lo que Alonso cree que no se debió sólo a los elementos del "espectáculo" sino al diseño de la ciudad, basado en la icónica "Strip".</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="section" id="podio"> <p>PODIO</p></div>
+        <div>
+            <div class="tables">
+                <table class="table" style="margin-bottom: 100px;">
+                    <h2 class="titles">2023 F1 World Championship </h2>
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">PREMIO</th>
+                        <th scope="col">FECHA</th>
+                        <th scope="col">GANADOR</th>
+                        <th scope="col">EQUIPO</th>
+                        <th scope="col">VUELTA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>2023 Bahrein F1 GP</td>
+                        <td>Marzo 5</td>
+                        <td>Max Verstappen</td>
+                        <td>Red Bull</td>
+                        <td>57</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>2023 Arabia Saudita F1 GP</td>
+                        <td>Marzo 19</td>
+                        <td>Sergio Pérez</td>
+                        <td>Red Bull</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>2023 Australian F1 GP</td>
+                        <td>Marzo 2</td>
+                        <td>Max Verstappen</td>
+                        <td>Red Bull</td>
+                        <td>58</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>2023 Azerbaijan F1 GP</td>
+                        <td>Abril 30</td>
+                        <td>Sergio Pérez</td>
+                        <td>Red Bull</td>
+                        <td>51</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Gran Premio de F2023 de Miami 1</td>
+                        <td> Mayo 7 </td>
+                        <td>Max Verstappen</td>
+                        <td>Red Bull</td>
+                        <td>57</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+
+                  <table class="table">
+                    <h2 class="titles">Lista de clasificacion de pilotos de F1 de todos los tiempos</h2>
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">DESTORNILLADOR</th>
+                        <th scope="col">GP</th>
+                        <th scope="col">1</th>
+                        <th scope="col">2ND</th>
+                        <th scope="col">3RD</th>
+                        <th scope="col">VAINA</th>
+                        <th scope="col">POLE</th>
+                        <th scope="col">FL</th>
+                        <th scope="col">DT</th>
+                        <th scope="col">PUNTOS</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Lewis Hamilton</td>
+                            <td>331</td>
+                            <td>103</td>
+                            <td>56</td>
+                            <td>38</td>
+                            <td>197</td>
+                            <td>104</td>
+                            <td>65</td>
+                            <td>7</td>
+                            <td>4637.5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Sebastian Vettel</td>
+                            <td>299</td>
+                            <td>53</td>
+                            <td>36</td>
+                            <td>33</td>
+                            <td>122</td>
+                            <td>57</td>
+                            <td>38</td>
+                            <td>4</td>
+                            <td>3098</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Max Verstappen</td>
+                            <td>184</td>
+                            <td>53</td>
+                            <td>28</td>
+                            <td>16</td>
+                            <td>97</td>
+                            <td>31</td>
+                            <td>29</td>
+                            <td>3</td>
+                            <td>2560.5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Fernando Alonso</td>
+                            <td>376</td>
+                            <td>32</td>
+                            <td>40</td>
+                            <td>34</td>
+                            <td>106</td>
+                            <td>22</td>
+                            <td>24</td>
+                            <td>2</td>
+                            <td>2261</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Kimi Räikkönen</td>
+                            <td>349</td>
+                            <td>21</td>
+                            <td>37</td>
+                            <td>45</td>
+                            <td>103</td>
+                            <td>18</td>
+                            <td>46</td>
+                            <td>1</td>
+                            <td>1873</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <div class="section" id="fechas"> <p>FECHAS</p></div>
+        <div>
+            <div class="tables">
+                <table class="table">
+                    <h2 class="titles">Fecha de carreras de F1 2023</h2>
+                    <thead>
+                      <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">FECHA</th>
+                            <th scope="col">EVENTO</th>
+                            <th scope="col">PISTA DE CARRERA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Feb 23-24</td>
+                            <td>Gran Premio de Baréin</td>
+                            <td>Circuito Internacional de Bahrein</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Marzo 5</td>
+                            <td>Gran Premio de Baréin</td>
+                            <td>Circuito Internacional de Bahrein</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Marzo 19</td>
+                            <td>Gran Premio de Arabia Saudita</td>
+                            <td>Circuito de calle Jeddah</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Abr 2</td>
+                            <td>Gran Premio de Australia</td>
+                            <td>Circuito Albert Park</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+
+        
+
+    </div>
+    <footer>
+
+    </footer>
+
+
+</body>
+   
+</html>
