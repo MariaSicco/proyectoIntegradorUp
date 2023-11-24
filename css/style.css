@@ -3,20 +3,41 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 130px;
+    height: 100%;
+    object-fit: cover;
+
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     font-size: 20px;
+    
+}
+.navbar-expand-lg .navbar-collapse {
+    padding: 20px;
 }
 .container-fluid{
     background-color: black;
-    height: 70px;
-}
+    height: 90px;
+    padding: 20px;
+    position: fixed;
+    overflow:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-top: 70px;
 
+}
+.navbar-toggler{
+    color: #ff0000;
+}
 
 .navbar-nav me-auto mb-2 mb-lg-0{
     display: flex;
     justify-content: space-between;
+}
+
+.menu_bar{
+    display: none;
 }
 .videoBanner{
     width: 100%;
@@ -28,29 +49,11 @@
     width: 100%;
 
 }
-.minibanner{
-    
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: rgb(7, 7, 7);
-    height: 90px;
-
-
-}
 
 .navbar-nav me-auto mb-2 mb-lg-0{ /* como separar el cotenido de la barra navegadora*/
     display: flex;
     justify-content: space-between;
 }
-.imgg {
-    width: 100%;
-    height: 80px;
-    position: relative;
-    animation: mymove  9s infinite;
-}
-
-  
 
 .backgroundImage{
     width: 100%;
@@ -67,23 +70,33 @@
 
 .picture{
     padding: 50px;
+    width: 50%;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .text{
-
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top:100px ;
     padding: 100px;
+    
 
 }
 
 .textF1{
     padding: 40px;
-    font-size: 25px;
+    font-size: 30px;
 }
-
+h1{
+    font-size: 90px;
+}
 
 
 .boton1 {
@@ -93,7 +106,9 @@
     background-color: rgb(202, 226, 43);
     border: none;
     border-radius: 9px;
-    transition: background-color 0.3s ease; /* Transición suave de color */
+    transition: background-color 0.3s ease; 
+    width: 30%;
+    height: 10%;
 }
   
 .boton1:hover {
@@ -115,7 +130,8 @@
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Transición suave de color */
-  }
+    font-size: 15px;
+}
   
 .buttonT:hover {
     background-color: #ff0000;
@@ -140,6 +156,7 @@
 .box2{
     display: flex;
     padding: 20px;
+    width: 50%;
 }
 .years{
     margin-bottom: 10px;
@@ -148,14 +165,35 @@
     background-image: url(../img/whiteBanner.jpg);
 }
 
-
+.years{
+    font-size: 50px;
+}
 .textoalt{
     width: 90%;
+    font-size: 25px;
     display: flex;
     align-items: center;
     text-align: left;
     text-align: justify;
 }
+.minibanner{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    height: 90px;
+    overflow: hidden;
+
+
+}
+.imgg {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    animation: mymove  9s infinite;
+}
+
 @keyframes mymove {
     from {left: 0px;}
     to {left: 100%;}
@@ -172,7 +210,7 @@
 
 /* desktop*/
 
-@media (min-width: 1025px) and (max-width: 1980px) {
+@media (min-width: 1200px) and (max-width: 1980px) {
     
     .collapse navbar-collapse{
         display: flex;
@@ -180,7 +218,7 @@
     }
     .text{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -241,21 +279,25 @@
 
 /* Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .container-fluid{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        object-fit: contain;
-    }
-    .container-fluid img {
-        width: 40%;
         justify-content: left;
-        float: left; 
-        }
+        object-fit: contain;
+        overflow: hidden;
+    }
+    .navbar-toggler{
+        width: 200;
+        position: absolute; /* Permite ajustar la posición de forma absoluta */
+        top: 20px; /* Distancia desde la parte superior */
+        right: 20px;
+        color: #ff0000;
+    }
+
     .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
-        height: 90px;
+        overflow: hidden;
     }
     .navbar navbar-expand-lg bg-body-tertiary p-0{
         width: 100%;
@@ -303,7 +345,11 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       width: 100%;
     
+    }
+    .textF1{
+        font-size: 20px;
     }
     .boton1 {
         display: flex;
@@ -322,23 +368,146 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        height: 900px;
+        height: 100%;
+    }
+    .textoalt{
+        padding: 20px;
     }
     .imggP{
         width: 100%; 
-        height: auto;
+        height: 50%;
     
         transition: transform 0.3s ease;
     }
     .minibanner{
         width: 100%;
     }
-    
+    .tiempo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .buttonT{
+        width: 30%;
+        margin-bottom: 10px;
+        
+    }
+
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 480px) {
-  
-   
+@media (min-width: 320px) and (max-width: 768px) {
+    .container-fluid{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    .navbar-toggler{
+        width: 200;
+        position: absolute; /* Permite ajustar la posición de forma absoluta */
+        top: 20px; /* Distancia desde la parte superior */
+        right: 20px;
+        color: #ff0000;
+    }
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+        overflow: hidden;
+    }
+    .navbar navbar-expand-lg bg-body-tertiary p-0{
+        width: 100%;
+        object-fit: cover;
+    }
+    .navbar-expand-lg .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        
+        
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 20px;
+    }
+    .minibanner{
+        width: 100%;
+        height: 10%;
+    }
+    .imgg{
+        width: 90%;
+    }
+    .backgroundImage{
+        width: 100%;
+        height: 950px;
+        background-image: url(../img/backimg.png);
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    } 
+    .picture{
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .text{
+        width: 90%;
+        height: 40%;
+        margin: 0;
+        display: block;
+        padding: 5px;
+    }
+    .text h1{
+        font-size: 60px;
+    }
+    .textF1{
+        font-size: 15px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    .boton1{
+        width: 30%;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .tiempo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buttonT{
+        width: 30%;
+        margin-bottom: 10px; 
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .box2{
+        width: 100%;
+    }
+    .imggP{
+        width: 100%; 
+        height: 50%;
+    
+        transition: transform 0.3s ease;
+    }
+    .textoalt{
+        padding: 20px;
+        width: 100%;
+        font-size: 15px;
+    }
+    .years{
+        font-size: 40px;
+    }
     
   }

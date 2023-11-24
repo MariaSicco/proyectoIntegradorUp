@@ -18,6 +18,9 @@ function drawPlayerCar() {
   ctx.fillRect(playerCar.x, playerCar.y, playerCar.width, playerCar.height);
 }
 
+
+
+
 // Función principal del juego
 function gameLoop() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
