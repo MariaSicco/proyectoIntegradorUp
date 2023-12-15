@@ -153,6 +153,7 @@ body{
 .section p{
     margin-left: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 .todasNotas{
     display: flex;
