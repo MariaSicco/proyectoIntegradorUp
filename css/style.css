@@ -1,19 +1,58 @@
-.navbar-expand-lg .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: black;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+    height: 120px;
+ 
 }
-.navbar-expand-lg .navbar-nav .nav-link{
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    width: 10%;
+}
+.logo{
+    height: 60px;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 200px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: aliceblue;
     font-size: 20px;
-    
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-.navbar-expand-lg .navbar-collapse {
-    padding: 20px;
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
+#check{
+    display: none;
+}
+
 .container-fluid{
     background-color: black;
     height: 90px;
@@ -27,18 +66,7 @@
     margin-top: 70px;
 
 }
-.navbar-toggler{
-    color: #ff0000;
-}
 
-.navbar-nav me-auto mb-2 mb-lg-0{
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu_bar{
-    display: none;
-}
 .videoBanner{
     width: 100%;
     height: 10%;
@@ -50,10 +78,7 @@
 
 }
 
-.navbar-nav me-auto mb-2 mb-lg-0{ /* como separar el cotenido de la barra navegadora*/
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .backgroundImage{
     width: 100%;
@@ -84,7 +109,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top:100px ;
+    
     padding: 100px;
     
 
@@ -109,6 +134,8 @@ h1{
     transition: background-color 0.3s ease; 
     width: 30%;
     height: 10%;
+    text-transform: uppercase;
+    font-weight: 600;
 }
   
 .boton1:hover {
@@ -158,6 +185,10 @@ h1{
     padding: 20px;
     width: 50%;
 }
+.secondB{
+   color: aliceblue;
+   
+}
 .years{
     margin-bottom: 10px;
 }
@@ -184,9 +215,11 @@ h1{
     background-color: rgb(7, 7, 7);
     height: 90px;
     overflow: hidden;
+    
 
 
 }
+
 .imgg {
     width: 100%;
     height: 80px;
@@ -211,6 +244,24 @@ h1{
 /* desktop*/
 
 @media (min-width: 1200px) and (max-width: 1980px) {
+    .enlace{
+        padding: 0;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 1px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0; 
+        height: 110px;
+    }
     
     .collapse navbar-collapse{
         display: flex;
@@ -250,6 +301,8 @@ h1{
         width: 70%;
         height: 10%;
         font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
     }
     .imggP{
         width: 50%; 
@@ -280,6 +333,30 @@ h1{
 /* Tablet*/
 
 @media (min-width: 768px) and (max-width: 1200px) {
+    .enlace{
+        padding: 0;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        width: 10%;
+    }
+    nav ul{
+        float: right;
+        margin-right: 1px;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0; 
+        height: 110px;
+    }
+    nav ul li a{
+        font-size: 14px;
+
+    }
+    
     .container-fluid{
         width: 100%;
         display: flex;
@@ -339,7 +416,7 @@ h1{
     }
     .text{
        padding: 0;
-       margin-top: 50px; 
+  
        margin-bottom: 50px;
        display: flex;
        flex-direction: column;
@@ -364,14 +441,29 @@ h1{
         height: 30%;
         font-size: 30px;
     }
-    .box{
+    .tiempo{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buttonT{
+        width: 30%;
+        margin-bottom: 10px; 
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
     }
-    .textoalt{
-        padding: 20px;
+    #uno{
+        order: 2;
+    }
+    #dos{
+        order: 1;
+    }
+    .box2{
+        width: 100%;
     }
     .imggP{
         width: 100%; 
@@ -379,24 +471,60 @@ h1{
     
         transition: transform 0.3s ease;
     }
-    .minibanner{
+    .textoalt{
+        padding: 20px;
         width: 100%;
+        font-size: 15px;
     }
-    .tiempo{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .buttonT{
-        width: 30%;
-        margin-bottom: 10px;
-        
+    .years{
+        font-size: 40px;
     }
 
 }
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 768px) {
+    
+    .checkbtn{
+        display: block;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 55%;
+        background: black;
+        top: 80px;
+        left: 100%;
+        margin-left: 0; 
+        text-align: center;
+        transition: all 0.5s;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    nav{
+        position: relative;
+        z-index: 9999;
+    }
+    nav ul{
+        margin-right: 0;
+        width: 100%;
+        position: fixed;
+    }
+    
+ 
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(202, 226, 43);
+    }
+    #check:checked ~ul{
+        left: 0;
+
+    }
+
+   
     .container-fluid{
         width: 100%;
         display: flex;
@@ -434,48 +562,64 @@ h1{
     }
     .minibanner{
         width: 100%;
-        height: 10%;
+
     }
     .imgg{
-        width: 90%;
+        width: 100%;
     }
     .backgroundImage{
         width: 100%;
-        height: 950px;
+        height: 70%;
         background-image: url(../img/backimg.png);
         padding: 0%;
         margin: 0%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: aliceblue;
     } 
     .picture{
         width: 100%;
-        padding-bottom: 5px;
+        height: 700px;
+    }
+    .picture img{
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
     }
     .text{
-        width: 90%;
-        height: 40%;
-        margin: 0;
-        display: block;
-        padding: 5px;
-    }
-    .text h1{
-        font-size: 60px;
+       padding: 0;
+  
+       margin-bottom: 50px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    
     }
     .textF1{
-        font-size: 15px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        margin-bottom: 0;
+        font-size: 20px;
     }
-    .boton1{
-        width: 30%;
-        height: 30px;
-        font-size: 12px;
+    .boton1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        padding: 10px 10px;
+        color: rgb(16, 16, 15);
+        background-color: rgb(202, 226, 43);
+        border: none;
+        border-radius: 9px;
+        transition: background-color 0.3s ease; /* Transición suave de color */
+        width: 40%;
+        height: 10%;
+        font-size: 20px;
         text-align: center;
+        text-decoration: solid;
+        text-transform: uppercase;
+        font-weight: 600;
     }
     .tiempo{
         display: flex;
@@ -492,8 +636,19 @@ h1{
         width: 100%;
         height: 100%;
     }
+    #box{
+        display: flex;
+        flex-direction: column; 
+    }
+    #uno{
+        order: 2;
+    }
+    #dos{
+        order: 1;
+    }
     .box2{
         width: 100%;
+   
     }
     .imggP{
         width: 100%; 
@@ -508,6 +663,10 @@ h1{
     }
     .years{
         font-size: 40px;
+    }
+    #table2{
+        width: 50%;
+        padding: 20px;
     }
     
   }

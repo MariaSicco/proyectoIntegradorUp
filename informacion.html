@@ -6,16 +6,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/informacion.css">
     <link rel="stylesheet" href="fonts.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <!-- Navegador-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./img/miniibanner.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a class="active" href="./index.html">Inicio</a></li>
+            <li><a href="./informacion.html">Información</a></li>
+            <li><a href="./pilotos.html">Pilotos</a></li>
+
+        </ul>
+    </nav>
+    <!-- Navegador
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
         <div class="container-fluid">
             <img src="./img/miniibanner.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-menu text-light"></span> <!-- Agrega tu icono de menú aquí -->
+                <span class="icon-menu text-light"></span> Agrega tu icono de menú aquí 
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -35,22 +50,23 @@
             </div>
         </div>
     </nav>
+-->
     
     <div class="bannerCeleste">
-        <img src="../proyectoIntegrador/img/celeste.png" alt="">
+        <img src="./img/celeste.png" alt="">
     </div>
 
     <div class="option">
-        <button class="boton1" onclick="location.href='#noticias'">NOTICIAS</button>
+        <button class="boton1" id="botones" onclick="location.href='#noticias'">NOTICIAS</button>
         <button class="boton1" onclick="location.href='#podio'">PODIO</button>
         <button class="boton1" onclick="location.href='#fechas'">FECHAS</button>
     </div>
 
     <div class="noticias" id="noticias">
-        <div class="section"> <p>NOTICIAS</p></div>
+        <div class="section"onclick="location.href='#botones'"> <p>NOTICIAS</p></div>
         <div class="todasNotas">
             <div class="notas">
-                <img src="../proyectoIntegrador/img/noticia1.jpg" alt="">
+                <img src="./img/noticia1.jpg" alt="">
                 <div class="box2">
                     <p class="fecha">21-11-2023</p>
                     <h2 class="titulo"> Verstappen recibió consejo paternal sobre la crítica del GP de Las Vegas</h2>
@@ -61,7 +77,7 @@
                 </div>
             </div>
             <div class="notas">
-                <img src="../proyectoIntegrador/img/noticia2.jpg" alt="">
+                <img src="./img/noticia2.jpg" alt="">
                 <div class="box2">
                     <p class="fecha">21-11-23</p>
                     <h2 class="titulo">Gasly critica a la FIA por el derrame de petróleo previo a la carrera en el GP de F1 de Las Vegas</h2>
@@ -71,7 +87,7 @@
                 </div>
             </div>
             <div class="notas">
-                <img src="../proyectoIntegrador/img/noticia3.jpg" alt="">
+                <img src="./img/noticia3.jpg" alt="">
                 <div class="box2">
                     <p class="fecha">20-11-2023</p>
                     <h2 class="titulo">Las estrellas de la F1 luchan contra el agotamiento durante el exigente final de la temporada de F1</h2>
@@ -81,7 +97,7 @@
                 </div>
             </div>
             <div class="notas">
-                <img src="../proyectoIntegrador/img/noticia4.jpg" alt="">
+                <img src="./img/noticia4.jpg" alt="">
                 <div class="box2">
                     <p class="fecha">20-11-2023</p>
                     <h2 class="titulo">Alonso aboga por mejoras en el GP de Las Vegas la próxima temporada de F1</h2>
@@ -91,7 +107,7 @@
                 </div>
             </div>
         </div>  
-        <div class="section" id="podio"> <p>PODIO</p></div>
+        <div class="section" id="podio" onclick="location.href='#botones'"> <p>PODIO</p></div>
         <div class="todasTablas">
             <div class="tables">
                 <table class="table" style="margin-bottom: 100px;">
@@ -149,10 +165,10 @@
                       </tr>
                       
                     </tbody>
-                  </table>
-
-                  <table class="table" style="margin-bottom: 100px;">
-                    <h2 class="titles">Lista de clasificacion de pilotos de F1 de todos los tiempos</h2>
+                </table>
+        
+                <table class="table" id="table2" style="margin-bottom: 100px;">
+                    <h2 class="titles" onclick="location.href='#botones'">Lista de clasificacion de pilotos de F1 de todos los tiempos</h2>
                     <thead>
                       <tr>
                         <th scope="col">NO</th>
@@ -236,11 +252,11 @@
                             <td>1873</td>
                         </tr>
                     </tbody>
-                  </table>
+                </table>
             </div>
         </div>
 
-        <div class="section" id="fechas"> <p>FECHAS</p></div>
+        <div class="section" id="fechas" onclick="location.href='#botones'"> <p>FECHAS</p></div>
         <div class="todasTablas">
             <div class="tables">
                 <table class="table">

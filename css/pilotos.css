@@ -1,3 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: black;
+    width: 100%;
+    height: 120px;
+
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    width: 10%;
+}
+.logo{
+    height: 60px;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin-right: 200px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.container-fluid{
+    background-color: black;
+    height: 90px;
+    padding: 20px;
+    position: fixed;
+    overflow:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-top: 70px;
+
+}
 body{
     background-image: url(../img/backimg.png);
 }
@@ -55,13 +122,13 @@ body{
   
 .slides {
     display: flex;
-    width: 100%;
-    height: 1000px;
+    max-height: 100%;
+    height:auto;
     transition: transform 0.5s ease;
 }
   
 .slide {
-    flex: 0 0 100%; /* Ancho de cada slide (4 slides en una fila) */
+    flex: 0 0 100%; 
 }
   
 .carruselFoto {
@@ -74,12 +141,12 @@ body{
 }
 .pilotoC{
     border-radius: 50%;
-    width: 10%; /* ajusta el tamaño según sea necesario */
+    width: 10%; 
     height: 150px; 
 }
 .fotoPiloto{
     border-radius: 50%;
-    width: 100%; /* ajusta el tamaño según sea necesario */
+    width: 100%; 
     
 }
 
@@ -93,7 +160,8 @@ body{
   border-radius: 50%;
   width: 250px; 
   height: 250px; 
-  margin-right: 5px; /* margen entre cada imagen */
+  margin-left: 20px;
+  margin-right: 40px; /* margen entre cada imagen */
 }
 .section{
     margin-top: 50px;
@@ -173,18 +241,40 @@ body{
     padding: 20px;
 
 }
+/*Desktop*/
 
 @media (min-width: 1200px) and (max-width: 1980px) {
+    .enlace{
+        padding: 0;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 1px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0; 
+        height: 110px;
+    }
+    
     .collapse navbar-collapse{
         display: flex;
         justify-content: space-between;
     }
+ 
+  
     .carousel{
         width: 100%;
     }
     .slide{
-        width: 100%;
-        height: 700px;
+        max-height: 100%;
+        height:auto;
        
     }
     .slides{
@@ -198,7 +288,10 @@ body{
     }
     .imagen-container{
         display: flex;
-        flex-wrap: wrap;
+        overflow:auto;
+        margin-top: 40px;
+        
+
     }
     .section{
 
@@ -208,19 +301,50 @@ body{
         justify-content:space-around;
     }
     .textt{
-        height: 80%;
+        height: auto;
+        margin-left: 50px;
     }
     .textt p{
         font-size: 18px;
         
     }
-    
+    .foto{
+        width: 20%;
+        height: 250px;
+    }
+    .todasNotas{
+        
+        width: 100%;
+        height: 1000px;
+        
+    }
 }
-
 /* Tablet*/
 
 @media (min-width: 768px) and (max-width: 1200px) {
-    
+    .enlace{
+        padding: 0;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        width: 10%;
+    }
+    nav ul{
+        float: right;
+        margin-right: 1px;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0; 
+        height: 110px;
+    }
+    nav ul li a{
+        font-size: 14px;
+
+    }
     .container-fluid{
         width: 100%;
         display: flex;
@@ -229,32 +353,65 @@ body{
         object-fit: contain;
         overflow: hidden;
     }
-    .navbar-toggler{
-        width: 200;
-        position: absolute; /* Permite ajustar la posición de forma absoluta */
-        top: 20px; /* Distancia desde la parte superior */
-        right: 20px;
-        color: #ff0000;
+    .imagen-container{
+        display: flex;
+        overflow:auto;
+        margin-top: 40px;
+        
+
+    }
+    .carousel{
+        width: 100%;
+    }
+    .slide{
+        max-height: 100%;
+        height:auto;
+       
+    }
+   
+    .carruselFoto{
+        width: 100%;
+        height: 100%;
+        
     }
 
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
-        overflow: hidden;
+    .section{
+
+        font-size: 40px;
     }
-    .navbar navbar-expand-lg bg-body-tertiary p-0{
-        width: 100%;
-        object-fit: cover;
+  
+    .textt{
+        height: auto;
+        margin-top: 60px;
     }
-    .navbar-expand-lg .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
-        
+    .textt p{
+        font-size: 18px;
         
     }
-    .navbar-expand-lg .navbar-nav .nav-link{
-        font-size: 20px;
+    .foto{
+        width: 25%;
+        height: 220px;
+    }
+    .todasNotas{
+        height: 100%;
+    }
+    .notas{
+        display:block;
+        height: 100%;  
+
+    }
+    .notas img{
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .titulo{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .box2{
+        width: 100%;
     }
 
 }
@@ -262,6 +419,45 @@ body{
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 55%;
+        background: black;
+        top: 80px;
+        left: 100%;
+        margin-left: 0; 
+        text-align: center;
+        transition: all 0.5s;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    nav{
+        position: relative;
+        z-index: 9999;
+    }
+    nav ul{
+        margin-right: 0;
+        width: 100%;
+        position: fixed;
+    }
+    
+ 
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(202, 226, 43);
+    }
+    #check:checked ~ul{
+        left: 0;
+
+    }
+   
     .container-fluid{
         width: 100%;
         display: flex;
@@ -270,32 +466,56 @@ body{
         object-fit: contain;
         overflow: hidden;
     }
-    .navbar-toggler{
-        width: 200;
-        position: absolute; /* Permite ajustar la posición de forma absoluta */
-        top: 20px; /* Distancia desde la parte superior */
-        right: 20px;
-        color: #ff0000;
+ 
+    .textt{
+        height: auto;
+        margin-top: 60px;
     }
+    .textt p{
+        font-size: 18px;
+        
+    }
+    .foto{
+        width: 25%;
+        height: 220px;
+    }
+    .todasNotas{
+        height: 100%;
+    }
+    .notas{
+        display:block;
+        height: 100%;  
 
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
-        overflow: hidden;
     }
-    .navbar navbar-expand-lg bg-body-tertiary p-0{
+    .notas img{
         width: 100%;
-        object-fit: cover;
-    }
-    .navbar-expand-lg .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
-        
-        
-    }
-    .navbar-expand-lg .navbar-nav .nav-link{
-        font-size: 20px;
+        height: 100%;
+
     }
     
+    .titulo{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .box2{
+        width: 100%;
+    }
+    .foto{
+        width: 20%;
+        height: 100px;
+    }
+    .imagen-container{
+        display: flex;
+        overflow:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .section{
+        margin: 0;
+    }
+    .titulo{
+        margin: 0;
+        font-size: 60px;
+    }
 }
